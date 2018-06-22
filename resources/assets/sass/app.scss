@@ -1,0 +1,74 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Font Awesome
+@import "~font-awesome/scss/font-awesome";
+
+body {
+    padding-top: 40px;
+}
+
+hr {
+    border-top: solid 2px #979797;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none!important;
+}
+
+.warm-grey-bk {
+    background-color: $warm-grey;
+}
+
+.max-content-width {
+    max-width: 1440px;
+}
+
+.height-inherit {
+    height: inherit;
+}
+
+.height-100-percent {
+    height: 100%;
+}
+
+.sub-title {
+    color: #3c3c3c;
+    font-weight: 400;
+}
+
+.sub-title-bold {
+    color: #3c3c3c;
+    font-weight: 500;
+}
+
+.small-line-height {
+    line-height: 12px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.local-deployment-message-bar {
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    background: #d90000;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 500;
+}

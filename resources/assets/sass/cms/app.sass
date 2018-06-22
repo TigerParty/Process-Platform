@@ -1,0 +1,206 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Font Awesome
+@import "~font-awesome/scss/font-awesome";
+
+$header-height: 50px
+
+[v-cloak]
+  display: none
+
+html, body
+    height: 100%
+.header
+  img
+    height: $header-height
+    width: auto
+
+.header-padding
+    padding-top: $header-height
+
+// helper
+.font-weight-light-bold
+    font-weight: 500
+
+.remove-focus-border:focus
+    box-shadow: none
+.font-size-0-8
+    font-size: 0.8rem
+.font-size-1-2
+    font-size: 1.2rem
+.font-size-1-5
+    font-size: 1.5rem
+.font-size-2
+    font-size: 2rem
+.font-size-5
+    font-size: 5rem
+.padding-4-5
+    padding: 1.8rem
+.cursor-pointer
+    cursor: pointer
+    &:focus, &:hover
+        cursor: pointer
+.cursor-no-drop
+    cursor: no-drop!important
+    &:focus, &:hover
+        cursor: no-drop!important
+.box-shadow
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+
+.logo-box
+    width: 100px
+    height: 100px
+    position: relative
+    border-radius: 50%
+    img
+        width: 70%
+        height: auto
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+.sidebar
+    a.active:hover, a.active:active, a.active:visited
+        background-color: #E9EDF5!important
+        color: #96A1A5!important
+    i.icon
+        min-width: 30px
+
+.header
+    .logo-box
+        width: 80px
+        height: 80px
+.center-box
+    position: relative
+    .center-item
+        position: absolute
+        &.right
+            right: 1.25rem
+        &.vertical-only-middle
+            top: 50%
+            transform: translateY(-50%)
+        &.absolute-center
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+.same-height-col
+    display: table-row
+    .same-height-item
+        display: table-cell
+        &.vertical-middle
+            vertical-align: middle
+        &.vertical-bottom
+            vertical-align: bottom
+.vertical-middle
+    vertical-align: middle!important
+.border-right
+    border-right: 2px #fff solid
+.table-hover tbody tr:hover
+    background-color: rgba(233, 237, 245, 0.55)
+
+.drag-icon-td
+    width: 25px
+    cursor: move
+    &:focus, &:hover
+      cursor: move
+
+.upload-box
+    border: 2px dashed #96A1A5
+
+tr.sortable-ghost
+    color: #000
+    background-color: #e9ecef
+
+
+
+.bs-wizard
+  border-bottom: solid 1px #e0e0e0
+  padding: 0 0 10px 0
+  > .bs-wizard-step
+    padding: 0
+    position: relative
+    .bs-wizard-info
+      color: #3e9ada
+      font-size: 14px
+    >
+      .bs-wizard-dot
+        position: absolute
+        width: 30px
+        height: 30px
+        display: block
+        background: #3e9ada
+        top: 25px
+        left: 50%
+        margin-top: -15px
+        margin-left: -15px
+        border-radius: 50%
+        &:before
+          content: ' '
+          width: 14px
+          height: 14px
+          background: #fff
+          border-radius: 50px
+          position: absolute
+          top: 8px
+          left: 8px
+        &:after
+          content: ' '
+          width: 8px
+          height: 8px
+          background: #3e9ada
+          border-radius: 50px
+          position: absolute
+          top: 11px
+          left: 11px
+      .progress
+        position: relative
+        border-radius: 0px
+        height: 3px
+        box-shadow: none
+        margin: 24px 0
+        background-color: #96A1A5
+        > .progress-bar
+          width: 0px
+          box-shadow: none
+          background: #3e9ada
+    &.complete > .progress > .progress-bar
+      width: 100%
+    &.active > .progress > .progress-bar
+      width: 50%
+    &:first-child.active > .progress > .progress-bar
+      width: 0%
+    &:last-child.active > .progress > .progress-bar
+      width: 100%
+    &.disabled > .bs-wizard-dot
+      background-color: #96A1A5
+      &:after
+        opacity: 0
+    &:first-child > .progress
+      left: 50%
+      width: 50%
+    &:last-child > .progress
+      width: 50%
+    &.disabled a.bs-wizard-dot
+      pointer-events: none
+    &.disabled .bs-wizard-info
+      color: #96A1A5
+
+.local-deployment-message-bar
+    color: #fff
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 99999
+    background: #d90000
+    text-align: center
+    line-height: 40px
+    font-weight: 500
+

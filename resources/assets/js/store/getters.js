@@ -1,0 +1,1 @@
+export const checkLoading = (state) => { return state.loading }
